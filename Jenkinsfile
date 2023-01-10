@@ -16,7 +16,7 @@ pipeline {
                 script {
                     app = docekr.build("gian/train-schedule")
                     app.inside {
-                        sh "echo $(curl localhost:8080)"
+                        sh 'echo $(curl localhost:8080)'
                     }
                 }
             }
